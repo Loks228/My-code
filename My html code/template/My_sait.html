@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="\static\Logo-site\favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" type="text/css" href="/static/meinHome.css">
+  <title>Nikolay Khodzinsky)))</title>
+  <style></style>
+</head>
+
+<body>
+  <div id="my-Window-Modal" class="my-window-languege">
+    <div class="window-content">
+      <button type="button" class="close btn btn-outline-danger" width="40px"></button>
+      <p class='p-window' id="Eng" style="display: block">Select your language:</p>
+      <p class='p-window' id="Ukr" style="display: none">Виберіть мову:</p>
+      <button class="language-button btn btn-outline-warning" id="Eng" onclick="changeLanguage('eng')">English</button>
+      <button class="language-button btn btn-outline-warning" id="Ukr"
+        onclick="changeLanguage('ukr')">Українська</button>
+    </div>
+  </div>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a id="myBtn" class="navbar-brand p-0">
+        <img src="/static/Logo-site/NK.png" alt="Logo" width="60" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="My_sait.html" id="Eng" style="display: block">Home</a>
+            <a class="nav-link" aria-current="page" href="My_sait.html" id="Ukr" style="display: none">Дім </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Anime top.html">Anime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://t.me/you2077bot" id="Eng" style="display: block">My telegram bot</a>
+            <a class="nav-link" href="https://t.me/you2077bot" id="Ukr" style="display: none">Мій телеграм-бот</a>
+          </li>
+          <li class="nav-item" id="language-button">
+            <a class="nav-link" id="Eng" style="display: block; padding-bottom: 5px;">
+              <img src="/static/img-photo/USA.jpg" alt="Logo" width="45" />
+            </a>
+            <a class="nav-link" id="Ukr" style="display: none; padding-bottom: 5px;">
+              <img src="/static/img-photo/Ukr.jpg" alt="Logo" width="45" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container text-center my-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <div id="parallax">
+          <img class="rounded-img text" src="/static/img-photo/myphoto_2024.jpg" alt="Коля" />
+          <div class="h-1 text">
+            <h1 class="fw-light text" id="Eng" style="display: block">Nikolay Khodzinsky</h1>
+            <h1 class="fw-light text" id="Ukr" style="display: none">Микола Ходзинський</h1>
+
+            <p class="lead p-1 Eng text" id="Eng" style="display: block">I want to become a good programmer and when
+              I
+              make
+              money.I
+              will invest them
+              correctly. I
+              will
+              invest them correctly. And I will reinvest them until I have 1 million dollars))))))))</p>
+
+            <p class="lead p-1 text" id="Ukr" style="display: none">Я хочу стати хорошим програмістом і тоді, коли
+              буду
+              заробляти
+              гроші.Вкладу їх правильно. І я буду їх реінвестувати, поки у мене не буде 1 мільйон
+              доларів)))))</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно -->
+  <div id="myModal" class="modal">
+
+    <!-- Содержимое модального окна -->
+    <div class="modal-content container">
+      <span>
+        <button type="button" class="btn-close" aria-label="Close"></button>
+      </span>
+      <h3 class="h3-4">Create your account</h3>
+
+      <p class="text-secondary"><small>FULL NAME</small></p>
+      <input class="" type="text" id="NAME" oninput="checkInputName()">
+      <span id="IconNAME"></span>
+      </input>
+
+      <p class="text-secondary"><small>AGE</small></p>
+      <input class="" type="text" id="AGE" oninput="checkInputAge()">
+      <span id="IconAGE"></span>
+      </input>
+
+      <p class="text-secondary"><small>INCOME</small></p>
+      <input class="" type="text" id="INCOME" oninput="checkInputIncome()" style="margin-bottom: 30px;">
+      <span id="IconINCOME"></span>
+      </input>
+
+      <button class="btn btn-primary" onclick="saveData()">Sing up</button>
+
+      <p class="muted"><a
+          class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"
+          data-bs-toggle="tooltip" data-bs-title="Подсказка">Information why it is</a></p>
+    </div>
+
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+
+</html>
