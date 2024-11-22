@@ -79,8 +79,8 @@
     });
     
     function saveData() {
-        var inputFields = ['NAME', 'AGE', 'INCOME'];
-        var statusIcons = ['IconNAME', 'IconAGE', 'IconINCOME'];
+        var inputFields = ['NAME', 'AGE', 'Share'];
+        var statusIcons = ['IconNAME', 'IconAGE', 'IconShare'];
       
         for (var i = 0; i < inputFields.length; i++) {
           var inputField = document.getElementById(inputFields[i]);
@@ -129,9 +129,9 @@
         }
     }
     
-    function checkInputIncome() {
-        var inputField = document.getElementById('INCOME');
-        var statusIcon = document.getElementById('IconINCOME');
+    function checkInputShare() {
+        var inputField = document.getElementById('Share');
+        var statusIcon = document.getElementById('IconShare');
     
         if (inputField.value == '') {
             // Поле пустое, показываем крестик
