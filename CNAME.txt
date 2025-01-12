@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 https://loks228.github.io/My-code/template/index.html
+=======
+my-portfolio.com
+>>>>>>> 4b482d9c66426b9c3588af5cb60c2b48a862f7e3
