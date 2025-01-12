@@ -1,0 +1,256 @@
+
+
+body {
+  background-image: url('img-photo/150883-_1440p_.gif');
+  background-position: center;
+  background-attachment: fixed;
+  transition: background-position 0.3s;
+}
+
+
+  .rounded-img {
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(26, 9, 9, 0.5);
+    margin-bottom: 1em;
+    border: 2px solid black; /* Черная рамка толщиной 2px */
+  }
+
+  .language-button {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    transform: scale(0.9);
+  }
+  .language-button:hover {
+    transform: scale(1)
+  }
+  .language-button:focus, .language-button:active{
+    opacity: 1 !important; 
+    transform: scale(1) !important;
+  }
+
+  .nav-link {
+    padding-bottom: 10px;
+    background: linear-gradient(to right, #03fa8b, #2d30e3);
+    -webkit-background-clip: text;
+    color: transparent;
+    box-shadow: 0 0 10px rgb(26, 9, 9, 0.5);
+  }
+
+  h1 {
+    background: linear-gradient(to right, #00bff9, #33f104);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+
+  .h-1 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid black; /* Черная рамка толщиной 2px */
+    border-radius: 5px; /* Углы рамки будут полукруглыми */
+  }
+
+  .p-1 {
+    background: linear-gradient(to right, #00def7, #6ef904);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .modakuke {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-contentkuke {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .closekuke {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+  }
+  
+  .closekuke:hover,
+  .closekuke:focus {
+    color: black;
+  }
+
+  /* Стиль для фона модального окна */
+  .modal {
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть поверх всего */
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+  }
+
+  /* Стиль для модального контента/бокса */
+  .modal-content {
+    box-shadow: 0 0 10px rgb(26, 9, 9, 0.5);
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% от верхней части экрана и центрировано */
+    padding: 40px; 
+    width: 28%;  /* Ширина модального окна */
+    height: 65%; /* Полная высота */
+    text-align: center; 
+  }
+
+  /* Стиль для кнопки закрытия модального окна */
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* остальные стили */
+    padding: 15px;
+  }
+
+
+
+  .h3-4 {
+    margin-bottom: 8%;
+  }
+
+  .text-secondary {
+    margin-bottom: 0;
+    text-align: left;
+    color: #6c757d; 
+  }
+
+  .text-with-icon { 
+    display: inline-flex; 
+    align-items: center;
+  }
+
+  input[type="text"] {
+    background-color: #fefefe;
+    border: none;
+    border-bottom: 1px solid rgb(191, 178, 178);
+    outline: none;
+    margin-bottom: 20px;
+  }
+
+  input {
+    position: relative;
+  }
+
+  #IconNAME {
+    margin-left: 8px;
+    margin-bottom: 3px;
+
+  }
+
+  #IconAGE {
+    margin-left: 8px;
+    margin-bottom: 3px;
+  }
+
+  #IconShare {
+    margin-left: 8px;
+    margin-bottom: 3px;
+  }
+  .galka  {
+    width: 20px;
+    margin-bottom: 5px;
+  }
+
+  .btn-primary {
+    margin-bottom: 20px;
+    --bs-btn-padding-y: 10px;
+    font-size: 20px
+  }
+
+  .tooltip {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .tooltip .tooltiptext {
+    z-index: 2;
+    width: 10px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .my-window-languege {
+    position: fixed;
+    z-index: 1;
+    padding-top: 190px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fbff05;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+  .window-content {
+    position: relative;
+    background-color: #363535;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black; /* Черная рамка толщиной 2px */
+    border-radius: 5px; /* Углы рамки будут полукруглыми */
+    width: 20%;
+    height: 24%;
+    text-align: center;
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    background: url('Logo-site/X.png');
+    background-size: cover; /* Добавьте это свойство */
+  }
+  .close:hover {
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    background: url('Logo-site/красный-крест.png');
+    background-size: cover; /* Добавьте это свойство */
+  }
+
+  #parallax {
+    perspective: 1000px;
+  }
+
+  #text {
+    transform-style: preserve-3d;
+    transition: transform 0.1s;
+  }
+
+
+
+
