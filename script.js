@@ -19,6 +19,11 @@
         Window.style.display = "none";
     }
     
+    var Close = document.getElementById("Close1"); 
+
+    Close.onclick = function () {
+      Window.style.display = "none";
+        }
     
     
     // Получить модальное окно
@@ -27,6 +32,8 @@
     // Получить кнопку, которая открывает модальное окно
     var btn = document.getElementById("myBtn");
 
+    // Получить кнопку, которая открывает модальное окно
+    var btn = document.getElementById("myBtn");
 
     // Получить элемент <span>, который закрывает модальное окно
     var span = document.getElementsByClassName("btn-close")[0];
