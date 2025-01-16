@@ -1,28 +1,35 @@
-    var Window = document.getElementById("my-Window-Modal");
+    const Window = document.getElementById("my-Window-Modal");
     
     // Получите элемент <span>, который закрывает модальное окно
-    var spanWindow = document.getElementsByClassName("close")[0];
+    const spanWindow = document.getElementsByClassName("close")[0];
 
     const Language_button = document.getElementById('language-button')
 
     // Когда страница загружается, откройте модальное окно
     window.onload = function() {
-        Window.style.display = "block";
+        Window.classList.add('crumple-effect'); 
+        setTimeout(() => { Window.style.display = 'block'; }, 1000); // Match the duration of the animation }
         changeLanguage('eng')
         }
     Language_button.onclick = function () {
-      Window.style.display = "block";
-        }
+      
+      setTimeout(() => { Window.style.display = 'block'; }, 1000)
 
+        }
+           
     // Когда пользователь нажимает на <span> (x), закройте модальное окно
     spanWindow.onclick = function() {
-        Window.style.display = "none";
+      Window.classList.add('crumpleTwo2');
+      setTimeout(() => {Window.style.display = 'none'; }, 1000);
+      setTimeout(() => {Window.classList.remove('crumpleTwo2')}, 1100);
     }
-    
-    var Close = document.getElementById("Close1"); 
+      
+    const Close = document.getElementById("Close1"); 
 
     Close.onclick = function () {
-      Window.style.display = "none";
+      Window.classList.add('crumpleTwo2');
+      setTimeout(() => {Window.style.display = 'none'; }, 1000);
+      setTimeout(() => {Window.classList.remove('crumpleTwo2')}, 1100);
         }
     
     
@@ -102,13 +109,7 @@
         }
       }
 
-    buttonEng.addEventListener('mousedown', function() {
-        this.classList.add('active');
-      });
-      
-    buttonEng.addEventListener('mouseup', function() {
-        this.classList.remove('active');
-      });
+
 
       function checkInputName() {
         var inputField = document.getElementById('NAME');
@@ -150,7 +151,7 @@
     }
 
     // Здесь вы можете добавить код для сохранения данных пользователя в базу данных
-    console.log(userInput);
+    // console.log(userInput);
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
