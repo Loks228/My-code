@@ -34,16 +34,13 @@
     
     
     // Получить модальное окно
-    var modal = document.getElementById("myModal");
+    const modal = document.getElementById("myModal");
 
     // Получить кнопку, которая открывает модальное окно
-    var btn = document.getElementById("myBtn");
-
-    // Получить кнопку, которая открывает модальное окно
-    var btn = document.getElementById("myBtn");
+    const btn = document.getElementById("myBtn");
 
     // Получить элемент <span>, который закрывает модальное окно
-    var span = document.getElementsByClassName("btn-close")[0];
+    const span = document.getElementsByClassName("btn-close")[0];
 
     // Когда пользователь нажимает на кнопку, открывается модальное окно 
     btn.onclick = function () {
@@ -75,30 +72,30 @@
     }
     
     document.addEventListener('mousemove', function(e) {
-      var textElements = document.querySelectorAll('.text');
-      var x = (e.clientX - window.innerWidth / 2) / 75; // Уменьшен делитель
-      var y = (e.clientY - window.innerHeight / 2) / 75; // Уменьшен делитель
+      const textElements = document.querySelectorAll('.text');
+      const x = (e.clientX - window.innerWidth / 2) / 75; // Уменьшен делитель
+      const y = (e.clientY - window.innerHeight / 2) / 75; // Уменьшен делитель
       
       textElements.forEach(function(text) {
-        var scale = Math.max(Math.abs(x), Math.abs(y)) / 100;
+        const scale = Math.max(Math.abs(x), Math.abs(y)) / 100;
         text.style.transform = `scale(${1 + scale}) rotateY(${x}deg) rotateX(${y}deg) rotateY(${x}deg) rotateX(${y}deg)`;
       });
     });
 
     document.addEventListener('mousemove', function(e) {
-      var x = e.clientX / window.innerWidth * 100;
-      var y = e.clientY / window.innerHeight * 100;
+      const x = e.clientX / window.innerWidth * 100;
+      const y = e.clientY / window.innerHeight * 100;
       
       document.body.style.backgroundPosition = `${x}% ${y}%`;
     });
     
     function saveData() {
-        var inputFields = ['NAME', 'AGE', 'Share'];
-        var statusIcons = ['IconNAME', 'IconAGE', 'IconShare'];
+      const inputFields = ['NAME', 'AGE', 'Share'];
+      const statusIcons = ['IconNAME', 'IconAGE', 'IconShare'];
       
-        for (var i = 0; i < inputFields.length; i++) {
-          var inputField = document.getElementById(inputFields[i]);
-          var statusIcon = document.getElementById(statusIcons[i]);
+        for (const i = 0; i < inputFields.length; i++) {
+          const inputField = document.getElementById(inputFields[i]);
+          const statusIcon = document.getElementById(statusIcons[i]);
       
           if (inputField.value == '') {
               statusIcon.innerHTML = 'Напишите тут пожалуйста';
@@ -112,8 +109,8 @@
 
 
       function checkInputName() {
-        var inputField = document.getElementById('NAME');
-        var statusIcon = document.getElementById('IconNAME');
+        const inputField = document.getElementById('NAME');
+        const statusIcon = document.getElementById('IconNAME');
     
         if (inputField.value == '') {
             // Поле пустое, показываем крестик
@@ -125,8 +122,8 @@
     }
     
     function checkInputAge() {
-        var inputField = document.getElementById('AGE');
-        var statusIcon = document.getElementById('IconAGE');
+      const inputField = document.getElementById('AGE');
+      const statusIcon = document.getElementById('IconAGE');
     
         if (inputField.value == '') {
             // Поле пустое, показываем крестик
@@ -138,8 +135,8 @@
     }
     
     function checkInputShare() {
-        var inputField = document.getElementById('Share');
-        var statusIcon = document.getElementById('IconShare');
+      const inputField = document.getElementById('Share');
+      const statusIcon = document.getElementById('IconShare');
     
         if (inputField.value == '') {
             // Поле пустое, показываем крестик
