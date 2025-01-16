@@ -13,7 +13,7 @@
         }
     Language_button.onclick = function () {
       
-      setTimeout(() => { Window.style.display = 'block'; }, 1000)
+      setTimeout(() => { Window.style.display = 'block'; }, 750)
 
         }
            
