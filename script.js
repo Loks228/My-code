@@ -58,17 +58,19 @@
         let buttonEng = document.querySelector('#Eng.language-button');
         let buttonUkr = document.querySelector('#Ukr.language-button');
         
-        if (lang === 'eng') {
-          elementsEng.forEach(el => el.style.display = "block");
-          elementsUkr.forEach(el => el.style.display = "none");
-          buttonEng.classList.add('active')
-          buttonUkr.classList.remove('active');
-        }else{
-          elementsEng.forEach(el => el.style.display = "none");
-          elementsUkr.forEach(el => el.style.display = "block");
-          buttonUkr.classList.add('active')
-          buttonEng.classList.remove('active');
-        } 
+
+        setTimeout(() => {
+          if (lang === 'eng') {
+            elementsEng.forEach(el => el.style.display = "block");
+            elementsUkr.forEach(el => el.style.display = "none");
+            buttonEng.classList.add('active')
+            buttonUkr.classList.remove('active');
+          }else{
+            elementsEng.forEach(el => el.style.display = "none");
+            elementsUkr.forEach(el => el.style.display = "block");
+            buttonUkr.classList.add('active')
+            buttonEng.classList.remove('active');
+          }}, 600)
     }
     
     document.addEventListener('mousemove', function(e) {
