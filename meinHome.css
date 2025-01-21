@@ -3,6 +3,7 @@
 body {
   background-image: url('img-photo/150883-_1440p_.gif');
   background-position: center;
+  overflow: hidden;
   background-attachment: fixed;
   transition: background-position 0.3s;
 }
