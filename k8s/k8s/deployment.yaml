@@ -17,3 +17,5 @@ spec:
         image: flask-service
         ports:
         - containerPort: 5000
+      imagePullSecrets:
+        - name: regcred
