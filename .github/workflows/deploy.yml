@@ -35,7 +35,7 @@ jobs:
     - name: Configure Kubeconfig
       run: |
         echo "${{ secrets.KUBECONFIG }}" | base64 -d > kubeconfig
-        export KUBECONFIG=$PWD/kubeconfig
+        echo "KUBECONFIG=$PWD/kubeconfig" >> $GITHUB_ENV
 
     - name: Deploy to Kubernetes
       run: |
