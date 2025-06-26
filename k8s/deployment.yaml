@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: flask-service
+        image: lordloks/flask-app
         ports:
         - containerPort: 5000
       imagePullSecrets:
